@@ -41,11 +41,11 @@ with
 
 **Goals, add one bullet:**
 
-> - The per-field error rate doubles as the Steadily RCE rollout's list of which fields we will miss and how often (the Sep 10 agenda).
+> - The per-field error rate doubles as the Steadily RCE rollout's list of which fields we will miss and how often (the Sep 10 call's first agenda item).
 
 **Metrics.** No new row (the table stays at three). Add one line under the table:
 
-> The same per-field error rate feeds the RCE rollout's "how much do the gaps move the valuation" read (BUC-5271; Sep 10 call).
+> The same per-field error rate is the input to the RCE rollout's "how much do the gaps move the valuation" read (BUC-5271 has the frequencies; the valuation-impact read is still owed by David).
 
 **Appendix, add:**
 
@@ -76,4 +76,4 @@ Not posted. Apply yourself, or say the word and I will apply exactly this.
 
 ## C. Brent's CA thread (Gmail thread 1a05f959136bdb83)
 
-Your 5-bullet reply from Sep 1 stands as written (DRAFT-FINAL.md in ~/mockups/rce-prefill-brent-reply/). The Sep 1 draft id no longer resolves, so it was either sent or replaced; check the thread before touching it. Nothing new here changes the reply: the held-back facts (Calabasas = 360Value's LA level; model built to match 360Value; 20% rule is code) are in the notes if Brent or David push.
+Your 5-bullet reply went out Sep 1 evening (Gmail shows it sent, cc Curry, Hartwig, Will Henry). Nothing to do here. Still unanswered on the thread: Brent's question (can our model be adjusted for CA) and Ehrmann's ask (accept another carrier's RCE / go above 120%). If either comes back, the held-back facts are in sources-2026-09-01/NOTES-brent-reply.md: Calabasas = 360Value's LA level, the model is built to match 360Value, the 20% rule is code, and a Coverage A band proposal already exists (Brian Kim, Jul 29, Cosmo's roadmap).
