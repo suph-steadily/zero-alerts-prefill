@@ -51,7 +51,7 @@ with
 
 > - [BUC-5271: what goes blank when 360Value goes away](https://steadily.atlassian.net/browse/BUC-5271) (David's fill-rate sheet)
 > - [BUC-5155: Goodbye 360Value, enable Steadily RCE](https://steadily.atlassian.net/browse/BUC-5155)
-> - [Pre-fill and the RCE: evidence memo](https://github.com/suph-steadily/suph-projects/blob/main/alert-north-star/dwelling-alert/prefill/RCE-2026-09-02.md)
+> - [Pre-fill and the RCE: evidence memo](https://github.com/suph-steadily/zero-alerts-prefill/blob/main/RCE-2026-09-02.md)
 
 ---
 

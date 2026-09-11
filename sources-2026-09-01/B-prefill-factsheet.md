@@ -46,7 +46,7 @@ Cohort note: unless stated otherwise, "DAMR cohort" = 10,428 dwelling-age-only, 
 | 26 | Gaming (agent drops premium, UW restores) | **210 quotes (~2%)**, median drop $532, median claw-back $227, vs 80 in reverse | DAMR cohort | 8/7 | MB 138284-138286 ("22-24"); memory damr-premium-join | verified |
 | 27 | UW's own perception | "pre-fill is wrong more often than not"; "We got so used to it being wrong, we stopped even bringing it up" | UW / CX | 8/6; 8/18 | DISCO-746 description (UW read 8/6); LaNae Rueda, "Fwd: Replacement Cost Calculator issue" 8/18 | stated |
 | 28 | Insurance Product's perception | "Do we have a team focused on improving our pre-fill? This seems to be a very frequent complaint. Pre-filling 2 kitchens on a quadplex seems like a very easy and obvious thing to fix." | | 8/18 | Bryan Hartwig, "Re: Replacement Cost Calculator issue" 8/18 | stated |
-| 29 | Dwelling-age alert volume (why pre-fill fixes matter operationally) | **~5,044 UW touches/mo**, **~2,200 forced reviews/mo**, top of the touch census | UW touch census | 8/2; 8/17 | Bake-off artifact; README §8 | verified |
+| 29 | Dwelling-age alert volume (why pre-fill fixes matter operationally) | **~5,044 UW touches/mo**, **~2,200 forced reviews/mo**, top of the touch census | UW touch census | 8/2; 8/17 | Bake-off artifact; [README](https://github.com/suph-steadily/zero-alerts/blob/main/README.md) §8 | verified |
 
 Also known but not a "wrongness" number: 360Value valuation is cached 7 days per (user, address), so same-agent requotes reuse the same pre-fill (book landscape.md).
 
@@ -106,10 +106,10 @@ Caution for this bucket: the Goosehead figure is a cost-per-square-foot complain
 
 ### 2e. Renewals and post-bind: do we knock for pre-fill fields? No.
 
-- Item-level UAR reasons on the unreviewed 91-100 twin: data-discrepancy reasons (residence type, year built, square footage) = **4 of 165 cancellation reason occurrences (2.4%)**, **zero for square footage**, all Tier 1 (fix at renewal). "We do not send NOCs for the six pre-filled data fields." (README §6b-ii, pulled 8/26; memory alert-north-star-sayback)
+- Item-level UAR reasons on the unreviewed 91-100 twin: data-discrepancy reasons (residence type, year built, square footage) = **4 of 165 cancellation reason occurrences (2.4%)**, **zero for square footage**, all Tier 1 (fix at renewal). "We do not send NOCs for the six pre-filled data fields." ([README](https://github.com/suph-steadily/zero-alerts/blob/main/README.md) §6b-ii, pulled 8/26; memory alert-north-star-sayback)
 - Inspection data-mismatch join (8/25): only **6 of 192** DAMR NOCs carried any mismatch flag, all cancelled for Liability/Condition/Ineligible (0 Misrep, 0 Pricing Change); mismatch-flagged policies cancel LESS (0.9% vs 5.2%). "Pre-fill errors surface premium-bearing (NOE lane), never as NOCs." (memory damr-postbind-uarnoe, 8/25 addendum)
 - Post-bind attribute corrections are small everywhere: 0.7-1.3 per 100 bound, property_type-skewed, +$300 average (memory damr-postbind-uarnoe).
-- Misrepresentation/Pricing NOC gap between reviewed and unreviewed: +0.20 per 100 (0.05 vs 0.25) (README §6b).
+- Misrepresentation/Pricing NOC gap between reviewed and unreviewed: +0.20 per 100 (0.05 vs 0.25) ([README](https://github.com/suph-steadily/zero-alerts/blob/main/README.md) §6b).
 - Suph's summary to Will 8/25 and standup 8/26: "pre-fill moves premium accuracy, not NOCs, so it may not be the right lever" for killing the alert.
 
 ### 2f. New-build roof score (BUC-5239)
@@ -199,7 +199,7 @@ Caution for this bucket: the Goosehead figure is a cost-per-square-foot complain
 - Google Drive: PRD "BUC-5223: improve the pre-fill so underwriters stop correcting it" (1OVZCVT4...); "DAMR pre-fill flip, thesis validation" (1S5c8qC3...); Datha reply drafts 10sLTePz... and 1y_2ljjb2... (the brief's ID 13Lluxvous... returned "not found"); Curry's prefill_nationwide sheet (1HZw3Lih...); "Villa - BUC-5057 Dwelling Assumption Fields - Disposition (2026-08-17)" (1GBH85Mm...).
 - Memory: damr-prefill-flip-validation, damr-premium-join, prefill-provider-bakeoff, alert-north-star-sayback, buc-5239-cape-newbuild-override, damr-age-baseline, damr-postbind-uarnoe, roof-dial-scope.
 - Book: landscape.md "Pre-fill waterfall for dwelling fields" (8/24); business-logic.md "Goodbye 360Value" (verified 8/31, comms plan 9/1).
-- Local: ~/dev/suph-projects/alert-north-star/README.md §5-§10, §6b, §6b-ii, terminology, appendix; ~/mockups/alert-north-star/ (oh-third-value-example, nj-duplex-example, prefill-eval-table, oh-journey-strip, what-must-be-true; no .md files present); ~/mockups/prefill-source-capture/ (screenshots + html only); ~/mockups/dwelling-alert-framing/ (html + PDF only).
+- Local: ~/dev/zero-alerts/README.md §5-§10, §6b, §6b-ii, terminology, appendix; ~/mockups/alert-north-star/ (oh-third-value-example, nj-duplex-example, prefill-eval-table, oh-journey-strip, what-must-be-true; no .md files present); ~/mockups/prefill-source-capture/ (screenshots + html only); ~/mockups/dwelling-alert-framing/ (html + PDF only).
 - Slack: #eng-sprint-goodbye-360value C0AQ5EV7R4L channel history back to 7/20 plus threads 1788187347.185399, 1788187814.529129, 1788190784.779969, 1788283469.898489, 1788296080.027579; #eng-prod-leadership-team thread 1786137824.630439 (8/7, 24 replies); group DM C0BSXQ63MLH thread 1787764891.697399 (8/26-8/27); #eng-pluribus thread 1787627998.858579 (8/24); DMs Suph/Will 8/25, Suph/Julie 8/26, Suph/Curry 9/1; #eng-bucees-standup 8/24, 8/26. Searches "prefill" (4 pages), "pre-fill" (2 pages, exhausted), "pre-filled" (1 page) since 7/3.
 - Jira (9/1): BUC-5223, BUC-5271, BUC-5239, BUC-5247, BUC-5155, BUC-5097, BUC-5057, DISCO-740, DISCO-746, DISCO-756, DISCO-759.
 
